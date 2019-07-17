@@ -9,6 +9,9 @@ const {
   validateLoginInput
 } = require('../../util/validators')
 
+/**
+ * generate a token on success
+ */
 function generateToken(user) {
   return jwt.sign(
     {
